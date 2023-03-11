@@ -241,7 +241,7 @@ html {
 }
 .donasi .container .row .card {
   text-align: center;
-  width: 30.5rem;
+  width: 26rem;
   color: var(--satu);
   background-color: #fff;
   transition: 0.3s;
@@ -283,7 +283,25 @@ html {
 }
 .end {
   background-color: var(--dua);
-  height: 400px;
+  height: 700px;
+  position: relative;
+}
+.end::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -10%;
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: -10%;
+  opacity: 0.3;
+}
+.end .container {
+  position: relative;
+  z-index: 1;
 }
 /* Media Queries */
 /* Laptop */
@@ -329,7 +347,6 @@ html {
   }
 
   .navbar .navbar-nav a {
-    display: block;
     color: var(--satu);
     margin: 1.5rem;
     padding: 0.5rem;
@@ -373,6 +390,19 @@ html {
   }
   .cta a {
     font-size: 1.3rem;
+  }
+  .end .row {
+    justify-content: end;
+  }
+  .end .row .end-img {
+    display: block;
+    margin-left: 3rem;
+  }
+  .end .row .end-img img {
+    width: 30%;
+  }
+  .end .row .end-img p {
+    font-size: 2rem;
   }
 }
 
