@@ -106,9 +106,14 @@ html {
   display: block;
   position: absolute;
   width: 100%;
-  height: 28%;
+  height: 100%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 70%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+.home .content {
+  position: relative;
+  z-index: 9999;
 }
 
 .home .content {
@@ -282,8 +287,11 @@ html {
   background-color: #ececec;
 }
 .end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--dua);
-  height: 700px;
   position: relative;
 }
 .end::after {
@@ -300,8 +308,12 @@ html {
   opacity: 0.3;
 }
 .end .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   z-index: 1;
+  padding: 10rem 0;
 }
 /* Media Queries */
 /* Laptop */
@@ -390,19 +402,6 @@ html {
   }
   .cta a {
     font-size: 1.3rem;
-  }
-  .end .row {
-    justify-content: end;
-  }
-  .end .row .end-img {
-    display: block;
-    margin-left: 3rem;
-  }
-  .end .row .end-img img {
-    width: 30%;
-  }
-  .end .row .end-img p {
-    font-size: 2rem;
   }
 }
 

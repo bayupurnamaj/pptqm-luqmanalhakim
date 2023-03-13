@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="daftar.css" />
+  </head>
+  <body>
+    <section class="daftar" id="daftar">
+      <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+        <div class="formulir">
+          <form action="#" method="POST" name="form-daftar" enctype="multipart/form-data">
+            <div>
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" name="nama" required />
+            </div>
+            <div>
+              <label for="alamat">Alamat</label>
+              <textarea id="alamat" name="alamat" required></textarea>
+            </div>
+            <div>
+              <label for="semester">Semester</label>
+              <select id="semester" name="semester" required>
+                <option value="">Pilih Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+              </select>
+            </div>
+            <div>
+              <label for="jurusan">Jurusan</label>
+              <input type="text" id="jurusan" name="jurusan" required />
+            </div>
+            <div>
+              <label for="surat_izin">Upload Surat Izin dari Orang Tua</label>
+              <input type="file" id="surat_izin" name="surat_izin" accept="image/*,.pdf" required />
+            </div>
+            <div>
+              <button type="submit">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="daftar.js"></script>
+  </body>
+</html>
