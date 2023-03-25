@@ -7,6 +7,7 @@
     <title>Pendaftaran</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="daftar.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
   </head>
   <body>
     <section class="daftar" id="daftar">
@@ -16,15 +17,15 @@
           <form action="#" method="POST" name="form-daftar" enctype="multipart/form-data">
             <div>
               <label for="nama">Nama</label>
-              <input type="text" id="nama" name="nama" required />
+              <input type="text" id="nama" class="nama" name="nama" required />
             </div>
             <div>
               <label for="alamat">Alamat</label>
-              <textarea id="alamat" name="alamat" required></textarea>
+              <textarea id="alamat" class="alamat" name="alamat" required></textarea>
             </div>
             <div>
               <label for="semester">Semester</label>
-              <select id="semester" name="semester" required>
+              <select id="semester" class="semester" name="semester" required>
                 <option value="">Pilih Semester</option>
                 <option value="1">Semester 1</option>
                 <option value="2">Semester 2</option>
@@ -35,11 +36,11 @@
             </div>
             <div>
               <label for="jurusan">Jurusan</label>
-              <input type="text" id="jurusan" name="jurusan" required />
+              <input type="text" id="jurusan" class="jurusan" name="jurusan" required />
             </div>
             <div>
               <label for="surat_izin">Upload Surat Izin dari Orang Tua</label>
-              <input type="file" id="surat_izin" name="surat_izin" accept="image/*,.pdf" required />
+              <input type="file" id="surat_izin" class="surat_izin" name="surat_izin" accept="image/*,.pdf" required />
             </div>
             <div>
               <button type="submit">Kirim</button>
@@ -48,7 +49,6 @@
         </div>
       </div>
     </section>
-    <script src="https://apis.google.com/js/api.js"></script>
     <script src="daftar.js"></script>
   </body>
 </html>
