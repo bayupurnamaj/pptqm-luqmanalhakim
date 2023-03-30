@@ -1,30 +1,30 @@
-.end .container .row .logo-img,
-.end .container .row .end-pro,
-.end .container .row .end-aml {
-  width: 30%;
+.end .container .kotak .logo-img,
+.end .container .kotak .end-pro,
+.end .container .kotak .end-aml {
+  width: 90%;
 }
-.end .container .row .logo-img img {
+.end .container .kotak .logo-img img {
   background-color: white;
   padding: 1rem;
   border-radius: 15%;
   width: 40%;
 }
-.end .container .row h3 {
+.end .container .kotak h3 {
   font-size: 2rem;
 }
-.end .container .row .logo-img p {
+.end .container .kotak .logo-img p {
   font-weight: 200;
 }
-.end .container .row p {
+.end .container .kotak p {
   font-size: 1.6rem;
   margin-top: 1rem;
   font-weight: 100;
 }
-.end .container .row span {
+.end .container .kotak span {
   font-weight: 400;
 }
 
-.end .container .row a {
+.end .container .kotak a {
   margin-top: 1rem;
   display: block;
   color: white;
@@ -36,7 +36,8 @@ footer {
   padding: 2rem 7%;
   font-size: 1.3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  font-weight: 200;
 }
 
 footer span {

@@ -1,0 +1,167 @@
+.bg1 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/pdk1.jpg) top center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.bg1::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(50, 86, 113, 0.4);
+}
+
+.bg1-content {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: aliceblue;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg1-content h1 {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: -2px 2px 5px black;
+}
+.bg1-content h1 i {
+  font-size: 9rem;
+  text-shadow: -2px 2px 5px black;
+  margin-left: -3rem;
+}
+.bg1-content h2 {
+  text-shadow: -2px 2px 5px black;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: rgb(65, 113, 150, 0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+}
+.content .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
+  transition: 0.1s;
+}
+.content .container .location,
+.content .container .number,
+.content .container .gmail,
+.content .container .daftar {
+  background-color: white;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 9px rgba(1, 1, 3, 0.5);
+  transition: 0.2s;
+  cursor: pointer;
+  padding: 1rem;
+}
+.content .container i {
+  color: #417196;
+  text-align: center;
+  font-size: 2rem;
+}
+.content .container span {
+  color: #6290b3;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  text-align: center;
+}
+.content .container .quote {
+  grid-area: quote;
+  padding-bottom: 30px;
+}
+.content .container .quote h1 {
+  text-align: center;
+  color: #355268;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+.content h1 {
+  text-align: center;
+  padding: 3rem;
+}
+.content footer {
+  width: 100%;
+  background-color: #212121;
+}
+
+.content footer p {
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 200;
+}
+.content footer p strong {
+  color: red;
+}
+
+/* --------------------hover----------------- */
+.content .location:hover,
+.content .number:hover,
+.content .gmail:hover,
+.content .daftar:hover {
+  transform: scale(1.03333);
+  box-shadow: 0 0 0 2px #417196;
+}
+
+.content .location :hover,
+.content .number :hover,
+.content .gmail :hover,
+.content .daftar:hover {
+  border-radius: 10px;
+}
+/* ----------------end hover ----------------- */
+/* Laptop */
+@media (max-width: 1575px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 912px) {
+  html {
+    font-size: 62.5%;
+  }
+  .content .container {
+    display: block;
+  }
+  .content .container .location,
+  .content .container .number,
+  .content .container .gmail,
+  .content .container .daftar {
+    margin-top: 2rem;
+  }
+}
+/* Mobilephone */
+@media (max-width: 560px) {
+  html {
+    font-size: 55%;
+  }
+}

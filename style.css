@@ -93,7 +93,7 @@ html {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(img/keg/slice6.png);
+  background-image: url(img/pdk1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -105,11 +105,11 @@ html {
   width: 100%;
   height: 100%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 50%);
 }
 .home .content {
   position: relative;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .home .content {
@@ -121,15 +121,15 @@ html {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
 }
-.home .content h1 span {
-  color: var(--satu);
-}
 .home .content p {
   font-size: 2rem;
   margin-top: 1rem;
   line-height: 1.4;
-  font-weight: 200;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--satu);
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .home .content .daftar,
@@ -283,10 +283,6 @@ html {
   background-color: #ececec;
 }
 .end {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: var(--dua);
   position: relative;
 }
@@ -301,15 +297,13 @@ html {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: -10%;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .end .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   position: relative;
   z-index: 1;
-  padding: 10rem 0;
+  padding: 10rem 7%;
 }
 /* Media Queries */
 /* Laptop */
@@ -345,7 +339,7 @@ html {
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 20rem;
+    width: 17rem;
     height: 100vh;
     transition: 0.4s;
   }
@@ -402,7 +396,7 @@ html {
 }
 
 /* Mobilephone */
-@media (max-width: 320xpx) {
+@media (max-width: 560px) {
   html {
     font-size: 55%;
   }
@@ -410,5 +404,16 @@ html {
     background-color: var(--satu);
     color: #fff;
     width: 40%;
+  }
+  .end .container {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  footer {
+    font-size: 1rem !important;
+  }
+  .end::after {
+    left: 0;
+    background-size: 100%;
   }
 }
