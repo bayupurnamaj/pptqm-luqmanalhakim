@@ -14,5 +14,5 @@ document.getElementById("gmail").addEventListener("click", function () {
 });
 
 document.getElementById("daftar").addEventListener("click", function () {
-  window.open("daftar.html", "_blank");
+  window.open("../daftar/index.html", "_blank");
 });

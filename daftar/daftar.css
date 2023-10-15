@@ -1,0 +1,32 @@
+body {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+/* Program */
+.daftar .container .row .card {
+  transition: 0.3s;
+  flex: 1 1 35rem;
+  text-align: center;
+}
+.daftar .container .row .card i,
+.donasi .container .row .card i {
+  font-size: 4rem;
+}
+.daftar .container .row .card a,
+.donasi .container .row .card a,
+.cta a {
+  font-size: 1.3rem;
+  position: relative;
+  display: flex;
+  float: right;
+  margin-top: 1rem;
+  color: var(--dua);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.daftar .container .row .card a:hover {
+  background-color: #ececec;
+}
