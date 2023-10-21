@@ -31,14 +31,14 @@
   font-size: 3rem;
   margin-top: 1rem;
   line-height: 1.4;
-  color: white;
-  background-color: rgba(98, 144, 179, 0.8);
+  color: var(--satu);
+  background-color: rgba(255, 244, 207, 0.8);
   padding: 1rem 0 1rem 1rem;
   border-radius: 0.5rem;
 }
 .hero .content h2 {
   font-size: 2rem;
-  color: var(--dua);
+  color: var(--satu);
   font-weight: 400;
 }
 .hero .content .daftar,
@@ -58,10 +58,11 @@
   background-color: var(--dua);
 }
 .par {
+  color: var(--satu);
   position: relative;
   z-index: 2;
   margin-top: 16rem;
-  background-color: rgba(98, 144, 179, 0.8);
+  background-color: rgba(255, 244, 207, 0.8);
   padding: 1rem;
   border-radius: 0.7rem;
   width: 35rem;

@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+}
+
+.article-list {
+  width: 70%;
+  padding: 20px;
+}
+.article-list h2 {
+  text-align: left;
+  font-size: 2.5rem;
+}
+.info-promo h2 {
+  color: var(--tiga);
+  font-size: 2.5rem;
+}
+.info-promo {
+  width: 30%;
+  padding: 20px;
+  background-color: rgba(39, 123, 192, 0.5);
+}
+.grup {
+  display: flex;
+  margin-bottom: 2rem;
+}
+/* Gaya untuk thumbnail artikel */
+.article-thumbnail {
+  position: relative;
+}
+
+.article-thumbnail img {
+  max-width: 15rem;
+}
+
+/* Gaya untuk info artikel */
+.article-info {
+  margin: -12.4% 0 0 30%;
+  width: 80%;
+  position: relative;
+  padding: 1rem 2.1rem 1rem 1rem;
+  color: rgb(27, 26, 26);
+  background: rgba(255, 244, 207, 0.5);
+}
+
+.article-info h3 {
+  margin: 0;
+}
+
+.article-info p {
+  margin: 0;
+}
+
+/* Isi Kolom Info-promo */
+.info-promo img {
+  width: 23.4rem;
+  padding: 1rem;
+}
+.info-promo h3 {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
